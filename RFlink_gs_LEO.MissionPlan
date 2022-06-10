@@ -1,0 +1,2370 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<FreeFlyerProjectFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" timePrecisionMode="nanosecond" schemaVersion="7.7.0.5">
+  <ProjectInformation>
+    <Author />
+    <Source />
+    <FreeFlyerVersion>7.7.1.55976</FreeFlyerVersion>
+    <RevisionNumber />
+    <Title />
+    <Subject />
+    <Category />
+    <Keywords />
+    <Comments />
+    <Notes />
+  </ProjectInformation>
+  <ProjectPreferences>
+    <General>
+      <LockProjectFromEditing>false</LockProjectFromEditing>
+    </General>
+    <OnOpen>
+      <ShowControlSequence>true</ShowControlSequence>
+      <ShowEmptyEnvironment>false</ShowEmptyEnvironment>
+      <ShowNotes>false</ShowNotes>
+      <ShowHome>false</ShowHome>
+      <ShowOutput>false</ShowOutput>
+      <CreateBackup>false</CreateBackup>
+      <BackupLocation></BackupLocation>
+    </OnOpen>
+    <OnRun>
+      <SaveMissionPlan>false</SaveMissionPlan>
+      <HideWarningMessages>false</HideWarningMessages>
+    </OnRun>
+  </ProjectPreferences>
+  <ProjectDataFiles>
+    <EarthOrientationFile useDefault="true"></EarthOrientationFile>
+    <ElectronDensityCoefficientFile useDefault="true"></ElectronDensityCoefficientFile>
+    <GeopotentialFile useDefault="true"></GeopotentialFile>
+    <HarrisPriesterDragFile useDefault="true"></HarrisPriesterDragFile>
+    <JacchiaAtmosphereModelFile useDefault="true"></JacchiaAtmosphereModelFile>
+    <LeapSecondFile useDefault="true"></LeapSecondFile>
+    <MagneticFieldFile useDefault="true"></MagneticFieldFile>
+    <PlanetaryFile useDefault="true"></PlanetaryFile>
+    <StationGeodeticsFile useDefault="true"></StationGeodeticsFile>
+    <SolidTideFile useDefault="true"></SolidTideFile>
+    <DSTFile useDefault="true"></DSTFile>
+    <StarFieldFile useDefault="true"></StarFieldFile>
+  </ProjectDataFiles>
+  <ProjectObjects>
+    <Object>
+      <SolarSystem name="FF_SolarSystem" isConstant="false" isGlobal="true">
+        <Name>FF_SolarSystem</Name>
+        <ComputePolarMotion>true</ComputePolarMotion>
+        <ApplyUT1Correction>true</ApplyUT1Correction>
+        <COUpdateInterval units="s" displayed_units="s">0</COUpdateInterval>
+        <NPUpdateInterval units="s" displayed_units="s">1800</NPUpdateInterval>
+        <IonosphereOptions>
+          <IonosphereOptions name="FF_SolarSystem_|ionoOptions|" isConstant="false" isGlobal="false">
+            <Name>FF_SolarSystem_|ionoOptions|</Name>
+            <MaximumHeight units="km" displayed_units="km">1000</MaximumHeight>
+            <MinimumHeight units="km" displayed_units="km">80</MinimumHeight>
+            <IntegrationStepSize units="km" displayed_units="km">25</IntegrationStepSize>
+            <ScaleFactor units="" displayed_units="">1</ScaleFactor>
+            <Model>0</Model>
+            <metadata dim="0" />
+          </IonosphereOptions>
+        </IonosphereOptions>
+        <NoradKeplerEqTolerance units="" displayed_units="">1e-12</NoradKeplerEqTolerance>
+        <metadata dim="0" />
+      </SolarSystem>
+    </Object>
+    <Object>
+      <ConsoleWindow name="Console" isConstant="false" isGlobal="true">
+        <Name>Console</Name>
+        <WindowTitle>Console</WindowTitle>
+        <WordWrap>false</WordWrap>
+        <CurrentTextColor>0</CurrentTextColor>
+        <BackColor>16777215</BackColor>
+        <Dimension units="" displayed_units="">10</Dimension>
+        <DockMode>1</DockMode>
+        <CurrentFontType>0</CurrentFontType>
+        <UseStdOut>false</UseStdOut>
+        <ShowOnRun>false</ShowOnRun>
+        <metadata dim="0" />
+      </ConsoleWindow>
+    </Object>
+    <Object>
+      <Spacecraft name="Rocinante" isConstant="false" isGlobal="false">
+        <Name>Rocinante</Name>
+        <EpochDetails>
+          <EpochSystem>UTC</EpochSystem>
+          <EpochTimeZone>UTC +/- 00:00</EpochTimeZone>
+          <EpochFormat>Calendar</EpochFormat>
+          <EpochType>Absolute</EpochType>
+          <EpochTypeInfo />
+        </EpochDetails>
+        <Epoch>Jan 01 2020 00:00:00.000000000</Epoch>
+        <ReferenceFrame>Mean of J2000 Earth Equator</ReferenceFrame>
+        <CentralBody>Earth</CentralBody>
+        <ElementType>Cartesian</ElementType>
+        <OrbitState>
+          <Cartesian>
+            <X units="km" displayed_units="km">-3410.673</X>
+            <Y units="km" displayed_units="km">5950.957</Y>
+            <Z units="km" displayed_units="km">-1788.627</Z>
+            <VX units="km/s" displayed_units="km/s">1.893006</VX>
+            <VY units="km/s" displayed_units="km/s">-1.071993</VY>
+            <VZ units="km/s" displayed_units="km/s">-7.176346</VZ>
+          </Cartesian>
+        </OrbitState>
+        <Orientation>
+          <AttitudeCoordinateSystem />
+          <AttitudeRefFrame>LVLH</AttitudeRefFrame>
+          <AttitudeSystem>EulerAngles</AttitudeSystem>
+          <AttitudeState>
+            <EulerAngles>
+              <EulerAngles units="deg" displayed_units="deg" dim="3">
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+              </EulerAngles>
+              <EulerRates units="deg/s" displayed_units="deg/s" dim="3">
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+              </EulerRates>
+              <EulerSequence units="" displayed_units="" dim="3">
+                <value>3</value>
+                <value>1</value>
+                <value>2</value>
+              </EulerSequence>
+            </EulerAngles>
+          </AttitudeState>
+        </Orientation>
+        <PhysicalProperties>
+          <ForceCoefficientType>0</ForceCoefficientType>
+          <ForceCoefficientTypes>
+            <Standard>
+              <Cd units="" displayed_units="">2.2</Cd>
+              <Cr units="" displayed_units="">1.4</Cr>
+            </Standard>
+          </ForceCoefficientTypes>
+          <Cl units="" displayed_units="">1.2</Cl>
+          <DragArea units="m^2" displayed_units="m^2">1.0</DragArea>
+          <LiftArea units="m^2" displayed_units="m^2">1.0</LiftArea>
+          <SRPArea units="m^2" displayed_units="m^2">1.0</SRPArea>
+          <SatelliteId>1</SatelliteId>
+        </PhysicalProperties>
+        <Visualization>
+          <Color>255</Color>
+          <BodyScale units="" displayed_units="">100000</BodyScale>
+          <TailLength units="" displayed_units="">100</TailLength>
+          <HistoryMode>0</HistoryMode>
+          <TickType>None</TickType>
+          <Annotation></Annotation>
+          <ModelDefinitionType>0</ModelDefinitionType>
+          <ModelDefinition>
+            <ThreeDModelFilename>
+              <ThreeDModelFile>Internal::GlobalStar</ThreeDModelFile>
+            </ThreeDModelFilename>
+          </ModelDefinition>
+        </Visualization>
+        <LaunchCoordinates>
+          <LCSEpochDetails>
+            <LCSEpochSystem>UTC</LCSEpochSystem>
+            <LCSEpochTimeZone>UTC +/- 00:00</LCSEpochTimeZone>
+            <LCSEpochFormat>Calendar</LCSEpochFormat>
+            <LCSEpochType>Absolute</LCSEpochType>
+            <LCSEpochTypeInfo />
+          </LCSEpochDetails>
+          <LCSEpoch>Jan 01 2020 00:00:00.000000000</LCSEpoch>
+          <LCSLongitude units="deg" displayed_units="deg">0.0</LCSLongitude>
+          <LCSLatitude units="deg" displayed_units="deg">0.0</LCSLatitude>
+        </LaunchCoordinates>
+        <InertialData>
+          <VehicleDryMass units="kg" displayed_units="kg">1000.0</VehicleDryMass>
+          <VehicleDryMOI units="kg m^2" displayed_units="kg m^2" dim="3,3">
+            <value>1200</value>
+            <value>0</value>
+            <value>0</value>
+            <value>0</value>
+            <value>1200</value>
+            <value>0</value>
+            <value>0</value>
+            <value>0</value>
+            <value>1200</value>
+          </VehicleDryMOI>
+          <MassTotal units="kg" displayed_units="kg">1990.18</MassTotal>
+          <VehicleDryCenterOfGravity units="m" displayed_units="m" dim="(3)">
+            <value>0</value>
+            <value>0</value>
+            <value>0</value>
+          </VehicleDryCenterOfGravity>
+        </InertialData>
+        <OrbitNumberCumulative units="" displayed_units="">1</OrbitNumberCumulative>
+        <OrbitNumberBounded units="" displayed_units="">1</OrbitNumberBounded>
+        <OrbitNumberResetNumber units="" displayed_units="">0</OrbitNumberResetNumber>
+        <OrbitNumberDaily units="" displayed_units="">1</OrbitNumberDaily>
+        <OrbitNumberResetLongitude units="" displayed_units="">20</OrbitNumberResetLongitude>
+        <StateAdvancerType>PropFM</StateAdvancerType>
+        <StateAdvancer>
+          <PropFM>
+            <Prop>
+              <RK89 name="Rocinante_Propagator" isConstant="false" isGlobal="false">
+                <Name>Rocinante_Propagator</Name>
+                <StepSize units="s" displayed_units="s">300</StepSize>
+                <StepJustTaken units="s" displayed_units="s">300.0</StepJustTaken>
+                <StepToTake units="s" displayed_units="s">300.0</StepToTake>
+                <LargeCurvature units="" displayed_units="">0</LargeCurvature>
+                <FixedStep>0</FixedStep>
+                <Tolerance units="" displayed_units="">1e-9</Tolerance>
+                <AllowErrorViolation>false</AllowErrorViolation>
+                <CalculateSTM>false</CalculateSTM>
+                <STMCalculationMethod>2</STMCalculationMethod>
+                <FM>
+                  <ForceModel name="Rocinante_ForceModel" isConstant="false" isGlobal="false">
+                    <Name>Rocinante_ForceModel</Name>
+                    <GravitatingBodies>
+                      <CelestialObjects dim="11">
+                        <value>Mercury</value>
+                        <value>Venus</value>
+                        <value>Earth</value>
+                        <value>Mars</value>
+                        <value>Jupiter</value>
+                        <value>Saturn</value>
+                        <value>Uranus</value>
+                        <value>Neptune</value>
+                        <value>Pluto</value>
+                        <value>Moon</value>
+                        <value>Sun</value>
+                      </CelestialObjects>
+                      <UseBodyForce dim="11">
+                        <value>false</value>
+                        <value>false</value>
+                        <value>true</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                      </UseBodyForce>
+                      <PlanetFieldType units="" displayed_units="" dim="11">
+                        <value>0</value>
+                        <value>0</value>
+                        <value>2</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                      </PlanetFieldType>
+                      <PlanetFieldDegree units="" displayed_units="" dim="11">
+                        <value>0</value>
+                        <value>0</value>
+                        <value>4</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                      </PlanetFieldDegree>
+                      <PlanetFieldOrder units="" displayed_units="" dim="11">
+                        <value>0</value>
+                        <value>0</value>
+                        <value>4</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                      </PlanetFieldOrder>
+                      <PlanetoPotentialFilename dim="11">
+                        <value></value>
+                        <value></value>
+                        <value>DEFAULT</value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                      </PlanetoPotentialFilename>
+                      <SolidTideFilename dim="11">
+                        <value></value>
+                        <value></value>
+                        <value>DEFAULT</value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                      </SolidTideFilename>
+                      <UseZeroTideModel dim="11">
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                      </UseZeroTideModel>
+                      <SolidTideDegree units="" displayed_units="" dim="11">
+                        <value>0</value>
+                        <value>0</value>
+                        <value>2</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                      </SolidTideDegree>
+                      <SolidTideOrder units="" displayed_units="" dim="11">
+                        <value>0</value>
+                        <value>0</value>
+                        <value>2</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                      </SolidTideOrder>
+                    </GravitatingBodies>
+                    <SRP>false</SRP>
+                    <SRPForceGeometry>0</SRPForceGeometry>
+                    <Atmospheric>
+                      <Drag>true</Drag>
+                      <AtmosphericDensityModel>1</AtmosphericDensityModel>
+                      <SolarFluxFileType>0</SolarFluxFileType>
+                      <SolarFluxFilename>DEFAULT</SolarFluxFilename>
+                      <HarrisPriesterF107Index>65</HarrisPriesterF107Index>
+                      <Lift>false</Lift>
+                      <Rho1 units="" displayed_units="">0.0</Rho1>
+                      <HarrisPriesterDensityFilename>DEFAULT</HarrisPriesterDensityFilename>
+                    </Atmospheric>
+                    <OtherAccelerations>
+                      <UseOtherAcceleration>false</UseOtherAcceleration>
+                      <OtherAccelerations units="km/s^2" displayed_units="km/s^2" dim="(3)">
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                      </OtherAccelerations>
+                      <OtherAccelerationsRate units="km/s^3" displayed_units="km/s^3" dim="(3)">
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                      </OtherAccelerationsRate>
+                    </OtherAccelerations>
+                    <metadata dim="0" />
+                  </ForceModel>
+                </FM>
+                <ToleranceMode>1</ToleranceMode>
+                <RelativeErrorThreshold units="" displayed_units="">0.1</RelativeErrorThreshold>
+                <metadata dim="0" />
+              </RK89>
+            </Prop>
+          </PropFM>
+        </StateAdvancer>
+        <AHFParms>
+          <AHF xsi:nil="true" />
+          <AHFFilename></AHFFilename>
+        </AHFParms>
+        <Hardware>
+          <Sensors dim="0" />
+          <Tanks dim="0" />
+          <Thrusters dim="0" />
+          <ProximityZones dim="0" />
+          <Receivers dim="0" />
+          <GNSSReceivers dim="0" />
+          <Transponders dim="0" />
+        </Hardware>
+        <PlateModel>
+          <PlateModel name="Rocinante_|PlateModel|" isConstant="false" isGlobal="false">
+            <Name>Rocinante_|PlateModel|</Name>
+            <Plates dim="0" />
+            <DrawMethod>2</DrawMethod>
+            <DrawNormals>false</DrawNormals>
+            <DrawRotationAxes>false</DrawRotationAxes>
+            <Visible>true</Visible>
+            <VisualScale units="" displayed_units="">100000</VisualScale>
+            <metadata dim="0" />
+          </PlateModel>
+        </PlateModel>
+        <OD>
+          <SpacecraftODProperties name="Rocinante_|SpacecraftODProperties|" isConstant="false" isGlobal="false">
+            <Name>Rocinante_|SpacecraftODProperties|</Name>
+            <ElementSetToProcess>Cartesian</ElementSetToProcess>
+            <Cartesian>
+              <CartesianOrbitStateEstimablePropertyContainer name="Rocinante_|SpacecraftODProperties|_|Cartesian|" isConstant="false" isGlobal="false">
+                <Name>Rocinante_|SpacecraftODProperties|_|Cartesian|</Name>
+                <X>
+                  <EstimablePosition name="Rocinante_|SpacecraftODProperties|_|Cartesian|_|X|" isConstant="false" isGlobal="false">
+                    <Name>Rocinante_|SpacecraftODProperties|_|Cartesian|_|X|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="km" displayed_units="km">0.05</Sigma>
+                    <ProcessNoise units="km^2" displayed_units="km^2">1e-14</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePosition>
+                </X>
+                <Y>
+                  <EstimablePosition name="Rocinante_|SpacecraftODProperties|_|Cartesian|_|Y|" isConstant="false" isGlobal="false">
+                    <Name>Rocinante_|SpacecraftODProperties|_|Cartesian|_|Y|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="km" displayed_units="km">0.05</Sigma>
+                    <ProcessNoise units="km^2" displayed_units="km^2">1e-14</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePosition>
+                </Y>
+                <Z>
+                  <EstimablePosition name="Rocinante_|SpacecraftODProperties|_|Cartesian|_|Z|" isConstant="false" isGlobal="false">
+                    <Name>Rocinante_|SpacecraftODProperties|_|Cartesian|_|Z|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="km" displayed_units="km">0.05</Sigma>
+                    <ProcessNoise units="km^2" displayed_units="km^2">1e-14</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePosition>
+                </Z>
+                <VX>
+                  <EstimableVelocity name="Rocinante_|SpacecraftODProperties|_|Cartesian|_|VX|" isConstant="false" isGlobal="false">
+                    <Name>Rocinante_|SpacecraftODProperties|_|Cartesian|_|VX|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="km/s" displayed_units="km/s">2e-5</Sigma>
+                    <ProcessNoise units="km^2/s^2" displayed_units="km^2/s^2">1e-17</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimableVelocity>
+                </VX>
+                <VY>
+                  <EstimableVelocity name="Rocinante_|SpacecraftODProperties|_|Cartesian|_|VY|" isConstant="false" isGlobal="false">
+                    <Name>Rocinante_|SpacecraftODProperties|_|Cartesian|_|VY|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="km/s" displayed_units="km/s">2e-5</Sigma>
+                    <ProcessNoise units="km^2/s^2" displayed_units="km^2/s^2">1e-17</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimableVelocity>
+                </VY>
+                <VZ>
+                  <EstimableVelocity name="Rocinante_|SpacecraftODProperties|_|Cartesian|_|VZ|" isConstant="false" isGlobal="false">
+                    <Name>Rocinante_|SpacecraftODProperties|_|Cartesian|_|VZ|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="km/s" displayed_units="km/s">2e-5</Sigma>
+                    <ProcessNoise units="km^2/s^2" displayed_units="km^2/s^2">1e-17</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimableVelocity>
+                </VZ>
+                <metadata dim="0" />
+              </CartesianOrbitStateEstimablePropertyContainer>
+            </Cartesian>
+            <Equinoctial>
+              <EquinoctialOrbitStateEstimablePropertyContainer name="Rocinante_|SpacecraftODProperties|_|Equinoctial|" isConstant="false" isGlobal="false">
+                <Name>Rocinante_|SpacecraftODProperties|_|Equinoctial|</Name>
+                <A>
+                  <EstimableEquinoctialA name="Rocinante_|SpacecraftODProperties|_|Equinoctial|_|A|" isConstant="false" isGlobal="false">
+                    <Name>Rocinante_|SpacecraftODProperties|_|Equinoctial|_|A|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="km" displayed_units="km">0.05</Sigma>
+                    <ProcessNoise units="km^2" displayed_units="km^2">1e-14</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimableEquinoctialA>
+                </A>
+                <H>
+                  <EstimablePositionComponent name="Rocinante_|SpacecraftODProperties|_|Equinoctial|_|H|" isConstant="false" isGlobal="false">
+                    <Name>Rocinante_|SpacecraftODProperties|_|Equinoctial|_|H|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </H>
+                <K>
+                  <EstimablePositionComponent name="Rocinante_|SpacecraftODProperties|_|Equinoctial|_|K|" isConstant="false" isGlobal="false">
+                    <Name>Rocinante_|SpacecraftODProperties|_|Equinoctial|_|K|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </K>
+                <P>
+                  <EstimablePositionComponent name="Rocinante_|SpacecraftODProperties|_|Equinoctial|_|P|" isConstant="false" isGlobal="false">
+                    <Name>Rocinante_|SpacecraftODProperties|_|Equinoctial|_|P|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </P>
+                <Q>
+                  <EstimablePositionComponent name="Rocinante_|SpacecraftODProperties|_|Equinoctial|_|Q|" isConstant="false" isGlobal="false">
+                    <Name>Rocinante_|SpacecraftODProperties|_|Equinoctial|_|Q|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </Q>
+                <Longitude>
+                  <EstimableEquinoctialLongitude name="Rocinante_|SpacecraftODProperties|_|Equinoctial|_|Longitude|" isConstant="false" isGlobal="false">
+                    <Name>Rocinante_|SpacecraftODProperties|_|Equinoctial|_|Longitude|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="deg" displayed_units="deg">1e-3</Sigma>
+                    <ProcessNoise units="deg^2" displayed_units="deg^2">1e-15</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimableEquinoctialLongitude>
+                </Longitude>
+                <metadata dim="0" />
+              </EquinoctialOrbitStateEstimablePropertyContainer>
+            </Equinoctial>
+            <SGP4>
+              <Sgp4OrbitStateEstimablePropertyContainer name="Rocinante_|SpacecraftODProperties|_|SGP4|" isConstant="false" isGlobal="false">
+                <Name>Rocinante_|SpacecraftODProperties|_|SGP4|</Name>
+                <H>
+                  <EstimablePositionComponent name="Rocinante_|SpacecraftODProperties|_|SGP4|_|H|" isConstant="false" isGlobal="false">
+                    <Name>Rocinante_|SpacecraftODProperties|_|SGP4|_|H|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </H>
+                <K>
+                  <EstimablePositionComponent name="Rocinante_|SpacecraftODProperties|_|SGP4|_|K|" isConstant="false" isGlobal="false">
+                    <Name>Rocinante_|SpacecraftODProperties|_|SGP4|_|K|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </K>
+                <P>
+                  <EstimablePositionComponent name="Rocinante_|SpacecraftODProperties|_|SGP4|_|P|" isConstant="false" isGlobal="false">
+                    <Name>Rocinante_|SpacecraftODProperties|_|SGP4|_|P|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </P>
+                <Q>
+                  <EstimablePositionComponent name="Rocinante_|SpacecraftODProperties|_|SGP4|_|Q|" isConstant="false" isGlobal="false">
+                    <Name>Rocinante_|SpacecraftODProperties|_|SGP4|_|Q|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </Q>
+                <Longitude>
+                  <EstimableEquinoctialLongitude name="Rocinante_|SpacecraftODProperties|_|SGP4|_|Longitude|" isConstant="false" isGlobal="false">
+                    <Name>Rocinante_|SpacecraftODProperties|_|SGP4|_|Longitude|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="deg" displayed_units="deg">1e-3</Sigma>
+                    <ProcessNoise units="deg^2" displayed_units="deg^2">1e-15</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimableEquinoctialLongitude>
+                </Longitude>
+                <MeanMotion>
+                  <EstimableMeanMotion name="Rocinante_|SpacecraftODProperties|_|SGP4|_|MeanMotion|" isConstant="false" isGlobal="false">
+                    <Name>Rocinante_|SpacecraftODProperties|_|SGP4|_|MeanMotion|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="orbits/day" displayed_units="orbits/day">1e-6</Sigma>
+                    <ProcessNoise units="(orbits/day)^2" displayed_units="(orbits/day)^2">1e-16</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimableMeanMotion>
+                </MeanMotion>
+                <metadata dim="0" />
+              </Sgp4OrbitStateEstimablePropertyContainer>
+            </SGP4>
+            <Cd>
+              <EstimableCoefficient name="Rocinante_|OD_Cd|" isConstant="false" isGlobal="false">
+                <Name>Rocinante_|OD_Cd|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="" displayed_units="">0.05</Sigma>
+                <ProcessNoise units="" displayed_units="">1e-9</ProcessNoise>
+                <metadata dim="0" />
+              </EstimableCoefficient>
+            </Cd>
+            <Rho1>
+              <EstimableCoefficient name="Rocinante_|OD_Rho1|" isConstant="false" isGlobal="false">
+                <Name>Rocinante_|OD_Rho1|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="" displayed_units="">0.05</Sigma>
+                <ProcessNoise units="" displayed_units="">1e-9</ProcessNoise>
+                <metadata dim="0" />
+              </EstimableCoefficient>
+            </Rho1>
+            <BStar>
+              <EstimableBStar name="Rocinante_|OD_BStar|" isConstant="false" isGlobal="false">
+                <Name>Rocinante_|OD_BStar|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="er^-1" displayed_units="er^-1">1e-5</Sigma>
+                <ProcessNoise units="er^-2" displayed_units="er^-2">1e-12</ProcessNoise>
+                <metadata dim="0" />
+              </EstimableBStar>
+            </BStar>
+            <AGOM>
+              <EstimableAGOM name="Rocinante_|OD_AGOM|" isConstant="false" isGlobal="false">
+                <Name>Rocinante_|OD_AGOM|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="m^2/kg" displayed_units="m^2/kg">1e-5</Sigma>
+                <ProcessNoise units="m^4/kg^2" displayed_units="m^4/kg^2">1e-12</ProcessNoise>
+                <metadata dim="0" />
+              </EstimableAGOM>
+            </AGOM>
+            <DragEstimateOption>0</DragEstimateOption>
+            <Cr>
+              <EstimableCoefficient name="Rocinante_|OD_Cr|" isConstant="false" isGlobal="false">
+                <Name>Rocinante_|OD_Cr|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="" displayed_units="">0.05</Sigma>
+                <ProcessNoise units="" displayed_units="">1e-9</ProcessNoise>
+                <metadata dim="0" />
+              </EstimableCoefficient>
+            </Cr>
+            <OtherAccelerationsX>
+              <EstimableAcceleration name="Rocinante_|OD_UX|" isConstant="false" isGlobal="false">
+                <Name>Rocinante_|OD_UX|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="km/s^2" displayed_units="km/s^2">1e-6</Sigma>
+                <ProcessNoise units="km^2/s^4" displayed_units="km^2/s^4">1e-15</ProcessNoise>
+                <metadata dim="0" />
+              </EstimableAcceleration>
+            </OtherAccelerationsX>
+            <OtherAccelerationsY>
+              <EstimableAcceleration name="Rocinante_|OD_UY|" isConstant="false" isGlobal="false">
+                <Name>Rocinante_|OD_UY|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="km/s^2" displayed_units="km/s^2">1e-6</Sigma>
+                <ProcessNoise units="km^2/s^4" displayed_units="km^2/s^4">1e-15</ProcessNoise>
+                <metadata dim="0" />
+              </EstimableAcceleration>
+            </OtherAccelerationsY>
+            <OtherAccelerationsZ>
+              <EstimableAcceleration name="Rocinante_|OD_UZ|" isConstant="false" isGlobal="false">
+                <Name>Rocinante_|OD_UZ|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="km/s^2" displayed_units="km/s^2">1e-6</Sigma>
+                <ProcessNoise units="km^2/s^4" displayed_units="km^2/s^4">1e-15</ProcessNoise>
+                <metadata dim="0" />
+              </EstimableAcceleration>
+            </OtherAccelerationsZ>
+            <PropagateCovariance>false</PropagateCovariance>
+            <CovariancePropagationModel>0</CovariancePropagationModel>
+            <Covariance>
+              <SpacecraftCovariance name="Rocinante_|Covariance|" isConstant="false" isGlobal="false">
+                <Name>Rocinante_|Covariance|</Name>
+                <Matrix units="" displayed_units="" dim="0,0" />
+                <metadata dim="0" />
+              </SpacecraftCovariance>
+            </Covariance>
+            <metadata dim="0" />
+          </SpacecraftODProperties>
+        </OD>
+        <RefFrameEpochDetails>
+          <RefFrameEpochSystem>UTC</RefFrameEpochSystem>
+          <RefFrameEpochTimeZone>UTC +/- 00:00</RefFrameEpochTimeZone>
+          <RefFrameEpochFormat>Calendar</RefFrameEpochFormat>
+          <RefFrameEpochType>Absolute</RefFrameEpochType>
+          <RefFrameEpochTypeInfo />
+        </RefFrameEpochDetails>
+        <RefFrameEpoch>Jan 01 2020 00:00:00.000000000</RefFrameEpoch>
+        <OrbitNumberCalculationsEnabled>false</OrbitNumberCalculationsEnabled>
+        <metadata dim="0" />
+      </Spacecraft>
+    </Object>
+    <Object>
+      <GroundStation name="Madrid" isConstant="false" isGlobal="false">
+        <Name>Madrid</Name>
+        <CentralBody>Earth</CentralBody>
+        <Location>
+          <Latitude units="deg" displayed_units="deg">30.0</Latitude>
+          <Longitude units="deg" displayed_units="deg">279.0</Longitude>
+          <Height units="km" displayed_units="km">0.0</Height>
+        </Location>
+        <FieldOfView>
+          <MaskShape>Cone</MaskShape>
+          <InterpolationMode>0</InterpolationMode>
+          <Cone>
+            <ConeElevation units="deg" displayed_units="deg">10.0</ConeElevation>
+          </Cone>
+          <Points>
+            <NumberOfPoints units="" displayed_units="">13</NumberOfPoints>
+            <MaskAzimuth units="deg" displayed_units="deg" dim="13">
+              <value>0.0</value>
+              <value>30.0</value>
+              <value>60.0</value>
+              <value>90.0</value>
+              <value>120.0</value>
+              <value>150.0</value>
+              <value>180.0</value>
+              <value>210.0</value>
+              <value>240.0</value>
+              <value>270.0</value>
+              <value>300.0</value>
+              <value>330.0</value>
+              <value>360.0</value>
+            </MaskAzimuth>
+            <MaskElevation units="deg" displayed_units="deg" dim="13">
+              <value>10.0</value>
+              <value>10.0</value>
+              <value>10.0</value>
+              <value>10.0</value>
+              <value>10.0</value>
+              <value>10.0</value>
+              <value>10.0</value>
+              <value>10.0</value>
+              <value>10.0</value>
+              <value>10.0</value>
+              <value>10.0</value>
+              <value>10.0</value>
+              <value>10.0</value>
+            </MaskElevation>
+          </Points>
+        </FieldOfView>
+        <StationGeodeticsFileInfo>
+          <UseSgf>true</UseSgf>
+          <SgfStation>CB1D</SgfStation>
+          <GeodeticsFilename>DEFAULT</GeodeticsFilename>
+        </StationGeodeticsFileInfo>
+        <OrbitDetermination>
+          <Biases>
+            <GLatitudeBias units="deg" displayed_units="deg">0.0</GLatitudeBias>
+            <LongitudeBias units="deg" displayed_units="deg">0.0</LongitudeBias>
+            <HeightBias units="km" displayed_units="km">0.0</HeightBias>
+          </Biases>
+          <ReceiverGainTemperature units="dB" displayed_units="dB">0.0</ReceiverGainTemperature>
+          <TransmitterEIRP units="dBm" displayed_units="dBm">0.0</TransmitterEIRP>
+          <RHCPolarizationSupport units="" displayed_units="">0</RHCPolarizationSupport>
+          <LHCPolarizationSupport units="" displayed_units="">0</LHCPolarizationSupport>
+          <LINPolarizationSupport units="" displayed_units="">0</LINPolarizationSupport>
+        </OrbitDetermination>
+        <MonthlyRefractivity units="" displayed_units="" dim="(12)">
+          <value>322.5</value>
+          <value>322.5</value>
+          <value>322.5</value>
+          <value>322.5</value>
+          <value>332.5</value>
+          <value>335.0</value>
+          <value>335.0</value>
+          <value>335.0</value>
+          <value>335.0</value>
+          <value>332.5</value>
+          <value>327.5</value>
+          <value>322.5</value>
+        </MonthlyRefractivity>
+        <Visualization>
+          <Color>16744448</Color>
+          <Opacity units="" displayed_units="">0.4</Opacity>
+          <DrawMethod>2</DrawMethod>
+        </Visualization>
+        <Antenna>
+          <GroundAntenna name="Madrid_Antenna" isConstant="false" isGlobal="false">
+            <Name>Madrid_Antenna</Name>
+            <ID></ID>
+            <TimeTagBias units="s" displayed_units="s">0</TimeTagBias>
+            <RangeBias units="km" displayed_units="km">0.0</RangeBias>
+            <RangeRateBias units="km/s" displayed_units="km/s">0.0</RangeRateBias>
+            <Angle1Bias units="deg" displayed_units="deg">0.0</Angle1Bias>
+            <Angle2Bias units="deg" displayed_units="deg">0.0</Angle2Bias>
+            <RightAscensionBias units="deg" displayed_units="deg">0.0</RightAscensionBias>
+            <DeclinationBias units="deg" displayed_units="deg">0.0</DeclinationBias>
+            <TransmitFrequency units="Hz" displayed_units="Hz">2e+09</TransmitFrequency>
+            <ReceiveFrequency units="Hz" displayed_units="Hz">2e+09</ReceiveFrequency>
+            <TDRSTwoWayRangeBias units="km" displayed_units="km">0.0</TDRSTwoWayRangeBias>
+            <TDRSTwoWayDopplerBias units="Hz" displayed_units="Hz">0.0</TDRSTwoWayDopplerBias>
+            <TDRSOneWayDopplerBias units="Hz" displayed_units="Hz">0.0</TDRSOneWayDopplerBias>
+            <BRTSTwoWayDopplerBias units="Hz" displayed_units="Hz">0.0</BRTSTwoWayDopplerBias>
+            <BRTSTwoWayRangeBias units="km" displayed_units="km">0.0</BRTSTwoWayRangeBias>
+            <BRTSRemoteTransponderDelay units="s" displayed_units="s">0.0</BRTSRemoteTransponderDelay>
+            <LimbLimit units="deg" displayed_units="deg">0</LimbLimit>
+            <UseLimbLimit>false</UseLimbLimit>
+            <ApplyTrackingDataConstraintChecks>false</ApplyTrackingDataConstraintChecks>
+            <RangeRateAveragingInterval units="s" displayed_units="s">60</RangeRateAveragingInterval>
+            <OD>
+              <GroundAntennaODProperties name="Madrid_|GroundAntennaODProperties|" isConstant="false" isGlobal="false">
+                <Name>Madrid_|GroundAntennaODProperties|</Name>
+                <TimeTagBias>
+                  <EstimableTimeBias name="Madrid_|OD_TimeTagBias|" isConstant="false" isGlobal="false">
+                    <Name>Madrid_|OD_TimeTagBias|</Name>
+                    <ProcessAction>0</ProcessAction>
+                    <Sigma units="s" displayed_units="s">1e-4</Sigma>
+                    <ProcessNoise units="s^2" displayed_units="s^2">1e-17</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimableTimeBias>
+                </TimeTagBias>
+                <GroundObservation>
+                  <GroundObservationMeasurements name="Madrid_|OD_GroundObservationMeasurements|" isConstant="false" isGlobal="false">
+                    <Name>Madrid_|OD_GroundObservationMeasurements|</Name>
+                    <Azimuth>
+                      <MeasurementAzimuth name="Madrid_|OD_GroundObservationMeasurements|_|Measurements_Azimuth|" isConstant="false" isGlobal="false">
+                        <Name>Madrid_|OD_GroundObservationMeasurements|_|Measurements_Azimuth|</Name>
+                        <Bias>
+                          <EstimableAngleBias name="Madrid_|OD_GroundObservationMeasurements|_|Measurements_Azimuth|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>Madrid_|OD_GroundObservationMeasurements|_|Measurements_Azimuth|_|Measurements|</Name>
+                            <ProcessAction>0</ProcessAction>
+                            <Sigma units="rad" displayed_units="rad">1.7e-8</Sigma>
+                            <ProcessNoise units="rad^2" displayed_units="rad^2">1.7e-8</ProcessNoise>
+                            <metadata dim="0" />
+                          </EstimableAngleBias>
+                        </Bias>
+                        <Minimum units="deg" displayed_units="deg">-180</Minimum>
+                        <Maximum units="deg" displayed_units="deg">180</Maximum>
+                        <Noise units="deg" displayed_units="deg">0.1</Noise>
+                        <metadata dim="0" />
+                      </MeasurementAzimuth>
+                    </Azimuth>
+                    <Elevation>
+                      <MeasurementElevation name="Madrid_|OD_GroundObservationMeasurements|_|Measurements_Elevation|" isConstant="false" isGlobal="false">
+                        <Name>Madrid_|OD_GroundObservationMeasurements|_|Measurements_Elevation|</Name>
+                        <Bias>
+                          <EstimableAngleBias name="Madrid_|OD_GroundObservationMeasurements|_|Measurements_Elevation|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>Madrid_|OD_GroundObservationMeasurements|_|Measurements_Elevation|_|Measurements|</Name>
+                            <ProcessAction>0</ProcessAction>
+                            <Sigma units="rad" displayed_units="rad">1.7e-8</Sigma>
+                            <ProcessNoise units="rad^2" displayed_units="rad^2">1.7e-8</ProcessNoise>
+                            <metadata dim="0" />
+                          </EstimableAngleBias>
+                        </Bias>
+                        <Minimum units="deg" displayed_units="deg">0</Minimum>
+                        <Maximum units="deg" displayed_units="deg">90</Maximum>
+                        <Noise units="deg" displayed_units="deg">0.1</Noise>
+                        <metadata dim="0" />
+                      </MeasurementElevation>
+                    </Elevation>
+                    <RightAscension>
+                      <MeasurementRightAscension name="Madrid_|OD_GroundObservationMeasurements|_|Measurements_RightAscension|" isConstant="false" isGlobal="false">
+                        <Name>Madrid_|OD_GroundObservationMeasurements|_|Measurements_RightAscension|</Name>
+                        <Bias>
+                          <EstimableAngleBias name="Madrid_|OD_GroundObservationMeasurements|_|Measurements_RightAscension|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>Madrid_|OD_GroundObservationMeasurements|_|Measurements_RightAscension|_|Measurements|</Name>
+                            <ProcessAction>0</ProcessAction>
+                            <Sigma units="rad" displayed_units="rad">1.7e-8</Sigma>
+                            <ProcessNoise units="rad^2" displayed_units="rad^2">1.7e-8</ProcessNoise>
+                            <metadata dim="0" />
+                          </EstimableAngleBias>
+                        </Bias>
+                        <Minimum units="deg" displayed_units="deg">-180</Minimum>
+                        <Maximum units="deg" displayed_units="deg">180</Maximum>
+                        <Noise units="deg" displayed_units="deg">0.1</Noise>
+                        <metadata dim="0" />
+                      </MeasurementRightAscension>
+                    </RightAscension>
+                    <Declination>
+                      <MeasurementDeclination name="Madrid_|OD_GroundObservationMeasurements|_|Measurements_Declination|" isConstant="false" isGlobal="false">
+                        <Name>Madrid_|OD_GroundObservationMeasurements|_|Measurements_Declination|</Name>
+                        <Bias>
+                          <EstimableAngleBias name="Madrid_|OD_GroundObservationMeasurements|_|Measurements_Declination|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>Madrid_|OD_GroundObservationMeasurements|_|Measurements_Declination|_|Measurements|</Name>
+                            <ProcessAction>0</ProcessAction>
+                            <Sigma units="rad" displayed_units="rad">1.7e-8</Sigma>
+                            <ProcessNoise units="rad^2" displayed_units="rad^2">1.7e-8</ProcessNoise>
+                            <metadata dim="0" />
+                          </EstimableAngleBias>
+                        </Bias>
+                        <Minimum units="deg" displayed_units="deg">0</Minimum>
+                        <Maximum units="deg" displayed_units="deg">90</Maximum>
+                        <Noise units="deg" displayed_units="deg">0.1</Noise>
+                        <metadata dim="0" />
+                      </MeasurementDeclination>
+                    </Declination>
+                    <Range>
+                      <MeasurementRange name="Madrid_|OD_GroundObservationMeasurements|_|Measurements_Range|" isConstant="false" isGlobal="false">
+                        <Name>Madrid_|OD_GroundObservationMeasurements|_|Measurements_Range|</Name>
+                        <Bias>
+                          <EstimableDistanceBias name="Madrid_|OD_GroundObservationMeasurements|_|Measurements_Range|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>Madrid_|OD_GroundObservationMeasurements|_|Measurements_Range|_|Measurements|</Name>
+                            <ProcessAction>0</ProcessAction>
+                            <Sigma units="km" displayed_units="km">1e-6</Sigma>
+                            <ProcessNoise units="km^2" displayed_units="km^2">1e-6</ProcessNoise>
+                            <metadata dim="0" />
+                          </EstimableDistanceBias>
+                        </Bias>
+                        <Minimum units="km" displayed_units="km">0</Minimum>
+                        <Maximum units="km" displayed_units="km">50000</Maximum>
+                        <Noise units="km" displayed_units="km">0.02</Noise>
+                        <metadata dim="0" />
+                      </MeasurementRange>
+                    </Range>
+                    <RangeRate>
+                      <MeasurementRangeRate name="Madrid_|OD_GroundObservationMeasurements|_|Measurements_RangeRate|" isConstant="false" isGlobal="false">
+                        <Name>Madrid_|OD_GroundObservationMeasurements|_|Measurements_RangeRate|</Name>
+                        <Bias>
+                          <EstimableRangeRateBias name="Madrid_|OD_GroundObservationMeasurements|_|Measurements_RangeRate|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>Madrid_|OD_GroundObservationMeasurements|_|Measurements_RangeRate|_|Measurements|</Name>
+                            <ProcessAction>0</ProcessAction>
+                            <Sigma units="km/s" displayed_units="km/s">1e-6</Sigma>
+                            <ProcessNoise units="km^2/s^2" displayed_units="km^2/s^2">1e-6</ProcessNoise>
+                            <metadata dim="0" />
+                          </EstimableRangeRateBias>
+                        </Bias>
+                        <Minimum units="km/s" displayed_units="km/s">-15</Minimum>
+                        <Maximum units="km/s" displayed_units="km/s">15</Maximum>
+                        <Noise units="km/s" displayed_units="km/s">0.0001</Noise>
+                        <metadata dim="0" />
+                      </MeasurementRangeRate>
+                    </RangeRate>
+                    <metadata dim="0" />
+                  </GroundObservationMeasurements>
+                </GroundObservation>
+                <TDRSObservation>
+                  <TDRSObservationMeasurements name="Madrid_|OD_TDRSObservationMeasurements|" isConstant="false" isGlobal="false">
+                    <Name>Madrid_|OD_TDRSObservationMeasurements|</Name>
+                    <OneWayDoppler>
+                      <MeasurementOneWayDoppler name="Madrid_|OD_TDRSObservationMeasurements|_|Measurements_OneWayDoppler|" isConstant="false" isGlobal="false">
+                        <Name>Madrid_|OD_TDRSObservationMeasurements|_|Measurements_OneWayDoppler|</Name>
+                        <Bias>
+                          <EstimableDopplerBias name="Madrid_|OD_TDRSObservationMeasurements|_|Measurements_OneWayDoppler|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>Madrid_|OD_TDRSObservationMeasurements|_|Measurements_OneWayDoppler|_|Measurements|</Name>
+                            <ProcessAction>0</ProcessAction>
+                            <Sigma units="Hz" displayed_units="Hz">1e-6</Sigma>
+                            <ProcessNoise units="Hz^2" displayed_units="Hz^2">1e-6</ProcessNoise>
+                            <metadata dim="0" />
+                          </EstimableDopplerBias>
+                        </Bias>
+                        <Minimum units="Hz" displayed_units="Hz">-200000</Minimum>
+                        <Maximum units="Hz" displayed_units="Hz">200000</Maximum>
+                        <Noise units="Hz" displayed_units="Hz">2</Noise>
+                        <metadata dim="0" />
+                      </MeasurementOneWayDoppler>
+                    </OneWayDoppler>
+                    <TwoWayDoppler>
+                      <MeasurementTwoWayDoppler name="Madrid_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayDoppler|" isConstant="false" isGlobal="false">
+                        <Name>Madrid_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayDoppler|</Name>
+                        <Bias>
+                          <EstimableDopplerBias name="Madrid_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayDoppler|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>Madrid_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayDoppler|_|Measurements|</Name>
+                            <ProcessAction>0</ProcessAction>
+                            <Sigma units="Hz" displayed_units="Hz">1e-6</Sigma>
+                            <ProcessNoise units="Hz^2" displayed_units="Hz^2">1e-6</ProcessNoise>
+                            <metadata dim="0" />
+                          </EstimableDopplerBias>
+                        </Bias>
+                        <Minimum units="Hz" displayed_units="Hz">-200000</Minimum>
+                        <Maximum units="Hz" displayed_units="Hz">200000</Maximum>
+                        <Noise units="Hz" displayed_units="Hz">2</Noise>
+                        <metadata dim="0" />
+                      </MeasurementTwoWayDoppler>
+                    </TwoWayDoppler>
+                    <TwoWayRange>
+                      <MeasurementTwoWayRange name="Madrid_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayRange|" isConstant="false" isGlobal="false">
+                        <Name>Madrid_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayRange|</Name>
+                        <Bias>
+                          <EstimableDistanceBias name="Madrid_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayRange|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>Madrid_|OD_TDRSObservationMeasurements|_|Measurements_TwoWayRange|_|Measurements|</Name>
+                            <ProcessAction>0</ProcessAction>
+                            <Sigma units="km" displayed_units="km">1e-6</Sigma>
+                            <ProcessNoise units="km^2" displayed_units="km^2">1e-6</ProcessNoise>
+                            <metadata dim="0" />
+                          </EstimableDistanceBias>
+                        </Bias>
+                        <Minimum units="km" displayed_units="km">0</Minimum>
+                        <Maximum units="km" displayed_units="km">100000</Maximum>
+                        <Noise units="km" displayed_units="km">0.005</Noise>
+                        <metadata dim="0" />
+                      </MeasurementTwoWayRange>
+                    </TwoWayRange>
+                    <metadata dim="0" />
+                  </TDRSObservationMeasurements>
+                </TDRSObservation>
+                <BRTSObservation>
+                  <BRTSObservationMeasurements name="Madrid_|OD_BRTSObservationMeasurements|" isConstant="false" isGlobal="false">
+                    <Name>Madrid_|OD_BRTSObservationMeasurements|</Name>
+                    <TwoWayDoppler>
+                      <MeasurementTwoWayDoppler name="Madrid_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayDoppler|" isConstant="false" isGlobal="false">
+                        <Name>Madrid_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayDoppler|</Name>
+                        <Bias>
+                          <EstimableDopplerBias name="Madrid_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayDoppler|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>Madrid_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayDoppler|_|Measurements|</Name>
+                            <ProcessAction>0</ProcessAction>
+                            <Sigma units="Hz" displayed_units="Hz">1e-6</Sigma>
+                            <ProcessNoise units="Hz^2" displayed_units="Hz^2">1e-6</ProcessNoise>
+                            <metadata dim="0" />
+                          </EstimableDopplerBias>
+                        </Bias>
+                        <Minimum units="Hz" displayed_units="Hz">-200000</Minimum>
+                        <Maximum units="Hz" displayed_units="Hz">200000</Maximum>
+                        <Noise units="Hz" displayed_units="Hz">2</Noise>
+                        <metadata dim="0" />
+                      </MeasurementTwoWayDoppler>
+                    </TwoWayDoppler>
+                    <TwoWayRange>
+                      <MeasurementTwoWayRange name="Madrid_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayRange|" isConstant="false" isGlobal="false">
+                        <Name>Madrid_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayRange|</Name>
+                        <Bias>
+                          <EstimableDistanceBias name="Madrid_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayRange|_|Measurements|" isConstant="false" isGlobal="false">
+                            <Name>Madrid_|OD_BRTSObservationMeasurements|_|Measurements_TwoWayRange|_|Measurements|</Name>
+                            <ProcessAction>0</ProcessAction>
+                            <Sigma units="km" displayed_units="km">1e-6</Sigma>
+                            <ProcessNoise units="km^2" displayed_units="km^2">1e-6</ProcessNoise>
+                            <metadata dim="0" />
+                          </EstimableDistanceBias>
+                        </Bias>
+                        <Minimum units="km" displayed_units="km">0</Minimum>
+                        <Maximum units="km" displayed_units="km">100000</Maximum>
+                        <Noise units="km" displayed_units="km">0.005</Noise>
+                        <metadata dim="0" />
+                      </MeasurementTwoWayRange>
+                    </TwoWayRange>
+                    <RemoteTransponderDelay>
+                      <EstimableTimeBias name="Madrid_|OD_RemoteTransponderDelay|" isConstant="false" isGlobal="false">
+                        <Name>Madrid_|OD_RemoteTransponderDelay|</Name>
+                        <ProcessAction>0</ProcessAction>
+                        <Sigma units="s" displayed_units="s">1e-4</Sigma>
+                        <ProcessNoise units="s^2" displayed_units="s^2">1e-17</ProcessNoise>
+                        <metadata dim="0" />
+                      </EstimableTimeBias>
+                    </RemoteTransponderDelay>
+                    <metadata dim="0" />
+                  </BRTSObservationMeasurements>
+                </BRTSObservation>
+                <metadata dim="0" />
+              </GroundAntennaODProperties>
+            </OD>
+            <metadata dim="0" />
+          </GroundAntenna>
+        </Antenna>
+        <RefractionModelType>0</RefractionModelType>
+        <RefractionModel>
+          <None />
+        </RefractionModel>
+        <OD>
+          <GroundStationODProperties name="Madrid_|GroundStationODProperties|" isConstant="false" isGlobal="false">
+            <Name>Madrid_|GroundStationODProperties|</Name>
+            <LatitudeBias>
+              <EstimableLatLongBias name="Madrid_|OD_LatitudeBias|" isConstant="false" isGlobal="false">
+                <Name>Madrid_|OD_LatitudeBias|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="deg" displayed_units="deg">1e-6</Sigma>
+                <ProcessNoise units="deg^2" displayed_units="deg^2">1e-6</ProcessNoise>
+                <metadata dim="0" />
+              </EstimableLatLongBias>
+            </LatitudeBias>
+            <LongitudeBias>
+              <EstimableLatLongBias name="Madrid_|OD_LongitudeBias|" isConstant="false" isGlobal="false">
+                <Name>Madrid_|OD_LongitudeBias|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="deg" displayed_units="deg">1e-6</Sigma>
+                <ProcessNoise units="deg^2" displayed_units="deg^2">1e-6</ProcessNoise>
+                <metadata dim="0" />
+              </EstimableLatLongBias>
+            </LongitudeBias>
+            <HeightBias>
+              <EstimableHeightBias name="Madrid_|OD_HeightBias|" isConstant="false" isGlobal="false">
+                <Name>Madrid_|OD_HeightBias|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="km" displayed_units="km">1e-6</Sigma>
+                <ProcessNoise units="km^2" displayed_units="km^2">1e-6</ProcessNoise>
+                <metadata dim="0" />
+              </EstimableHeightBias>
+            </HeightBias>
+            <metadata dim="0" />
+          </GroundStationODProperties>
+        </OD>
+        <metadata dim="0" />
+      </GroundStation>
+    </Object>
+    <Object>
+      <RFLink name="RFLink1" isConstant="false" isGlobal="false">
+        <Name>RFLink1</Name>
+        <Transmitter>
+          <RFLinkComponent name="RFLink1_|Transmitter|" isConstant="false" isGlobal="false">
+            <Name>RFLink1_|Transmitter|</Name>
+            <AntennaDiameter units="m" displayed_units="m">0.2</AntennaDiameter>
+            <Power units="W" displayed_units="W">200</Power>
+            <AntennaEfficiency units="" displayed_units="">0.6</AntennaEfficiency>
+            <LineLoss units="dB" displayed_units="dB">1</LineLoss>
+            <NoiseTemperature units="Deg K" displayed_units="Deg K">1500</NoiseTemperature>
+            <PointingLoss units="dB" displayed_units="dB">2</PointingLoss>
+            <ExtrapolatedGain units="dB" displayed_units="dB">-1e10</ExtrapolatedGain>
+            <GainType>Calculated Uniform Antenna Gain</GainType>
+            <GainType2 />
+            <ReferenceObject>Rocinante</ReferenceObject>
+            <metadata dim="0" />
+          </RFLinkComponent>
+        </Transmitter>
+        <Receiver>
+          <RFLinkComponent name="RFLink1_|Receiver|" isConstant="false" isGlobal="false">
+            <Name>RFLink1_|Receiver|</Name>
+            <AntennaDiameter units="m" displayed_units="m">2</AntennaDiameter>
+            <Power units="W" displayed_units="W">200</Power>
+            <AntennaEfficiency units="" displayed_units="">0.6</AntennaEfficiency>
+            <LineLoss units="dB" displayed_units="dB">1</LineLoss>
+            <NoiseTemperature units="Deg K" displayed_units="Deg K">1500</NoiseTemperature>
+            <PointingLoss units="dB" displayed_units="dB">2</PointingLoss>
+            <ExtrapolatedGain units="dB" displayed_units="dB">-1e10</ExtrapolatedGain>
+            <GainType>Calculated Uniform Antenna Gain</GainType>
+            <GainType2 />
+            <ReferenceObject>Madrid</ReferenceObject>
+            <metadata dim="0" />
+          </RFLinkComponent>
+        </Receiver>
+        <AtmosphericLoss units="dB" displayed_units="dB">2.23</AtmosphericLoss>
+        <PolarizationLoss units="dB" displayed_units="dB">0.25</PolarizationLoss>
+        <Frequency units="MHz" displayed_units="MHz">3100</Frequency>
+        <LinkPowerMargin units="dB" displayed_units="dB">3</LinkPowerMargin>
+        <Bandwidth units="MHz" displayed_units="MHz">40</Bandwidth>
+        <BitRate units="bps" displayed_units="bps">1</BitRate>
+        <ModulationType>QPSK</ModulationType>
+        <metadata dim="0" />
+      </RFLink>
+    </Object>
+    <Object>
+      <ViewWindow name="ViewWindow1" isConstant="false" isGlobal="false">
+        <Name>ViewWindow1</Name>
+        <WindowTitle></WindowTitle>
+        <Viewpoints dim="1">
+          <value>
+            <Viewpoint name="ViewWindow1_Default" isConstant="false" isGlobal="false">
+              <Name>ViewWindow1_Default</Name>
+              <ViewpointName>Default</ViewpointName>
+              <ViewpointType>view</ViewpointType>
+              <ViewpointParameters>
+                <view>
+                  <ThreeDView>
+                    <ThreeDViewpointOptions name="ViewWindow1_Default_|ThreeDView|" isConstant="false" isGlobal="false">
+                      <Name>ViewWindow1_Default_|ThreeDView|</Name>
+                      <Source>Earth</Source>
+                      <Target>Earth</Target>
+                      <TailReference>Earth</TailReference>
+                      <ReferenceFrame>body fixed</ReferenceFrame>
+                      <Declination units="deg" displayed_units="deg">20.0</Declination>
+                      <FieldOfView units="deg" displayed_units="deg">45.0</FieldOfView>
+                      <Radius units="km" displayed_units="km">30000.0</Radius>
+                      <RightAscension units="deg" displayed_units="deg">270.0</RightAscension>
+                      <metadata dim="0" />
+                    </ThreeDViewpointOptions>
+                  </ThreeDView>
+                </view>
+              </ViewpointParameters>
+              <metadata dim="0" />
+            </Viewpoint>
+          </value>
+        </Viewpoints>
+        <UseLighting>true</UseLighting>
+        <UseTextures>true</UseTextures>
+        <ShowLogo>true</ShowLogo>
+        <LogoTextureFilename></LogoTextureFilename>
+        <ShowStatusText>true</ShowStatusText>
+        <ShowTextBackdrops>true</ShowTextBackdrops>
+        <AmbientColor>6710886</AmbientColor>
+        <StatusTextColor>16777215</StatusTextColor>
+        <BackgroundColor>0</BackgroundColor>
+        <ObjectShadowing>0</ObjectShadowing>
+        <StatusTextFont>
+          <ViewFont name="ViewWindow1_|StatusTextFont|" isConstant="false" isGlobal="false">
+            <Name>ViewWindow1_|StatusTextFont|</Name>
+            <Bold>false</Bold>
+            <Italic>false</Italic>
+            <Size units="" displayed_units="">0</Size>
+            <Strikeout>false</Strikeout>
+            <Typeface>Tahoma</Typeface>
+            <Underline>false</Underline>
+            <metadata dim="0" />
+          </ViewFont>
+        </StatusTextFont>
+        <DefaultObjectLabelFont>
+          <ViewFont name="ViewWindow1_|DefaultObjectLabelFont|" isConstant="false" isGlobal="false">
+            <Name>ViewWindow1_|DefaultObjectLabelFont|</Name>
+            <Bold>false</Bold>
+            <Italic>false</Italic>
+            <Size units="" displayed_units="">20</Size>
+            <Strikeout>false</Strikeout>
+            <Typeface>Tahoma</Typeface>
+            <Underline>false</Underline>
+            <metadata dim="0" />
+          </ViewFont>
+        </DefaultObjectLabelFont>
+        <Objects dim="14">
+          <value>Mercury</value>
+          <value>Venus</value>
+          <value>Earth</value>
+          <value>Moon</value>
+          <value>Mars</value>
+          <value>Jupiter</value>
+          <value>Saturn</value>
+          <value>Uranus</value>
+          <value>Neptune</value>
+          <value>Pluto</value>
+          <value>Sun</value>
+          <value>Stars</value>
+          <value>Madrid</value>
+          <value>Rocinante</value>
+        </Objects>
+        <ProjectionHeights units="km" displayed_units="km" dim="14">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>800</value>
+          <value>800</value>
+        </ProjectionHeights>
+        <ShowObject dim="14">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </ShowObject>
+        <ShowBody dim="14">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </ShowBody>
+        <ShowName dim="14">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>0</value>
+          <value>1</value>
+          <value>0</value>
+        </ShowName>
+        <ShowGrid dim="14">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </ShowGrid>
+        <ShowAxes dim="14">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </ShowAxes>
+        <ShowHistory dim="14">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>1</value>
+        </ShowHistory>
+        <ShowIcon dim="14">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>1</value>
+        </ShowIcon>
+        <IconImageFilename dim="14">
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value>C:\Users\chaitu\Documents\space and astro\LinkedIn Posts\Rocinante\roci2.STL</value>
+        </IconImageFilename>
+        <IconSize units="pixel" displayed_units="pixel" dim="14">
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30</value>
+          <value>30</value>
+        </IconSize>
+        <IconDrawingMode dim="14">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </IconDrawingMode>
+        <IconColor dim="14">
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+        </IconColor>
+        <StoreVelocity dim="14">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </StoreVelocity>
+        <AxesScaleMode dim="14">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </AxesScaleMode>
+        <AxesSize units="km" displayed_units="km" dim="14">
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1</value>
+          <value>1</value>
+        </AxesSize>
+        <AxesScale units="" displayed_units="" dim="14">
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+        </AxesScale>
+        <TailLength units="" displayed_units="" dim="14">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>100</value>
+        </TailLength>
+        <HistoryMode units="" displayed_units="" dim="14">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </HistoryMode>
+        <CurrentTailState units="" displayed_units="" dim="14">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </CurrentTailState>
+        <LineWidthUnits units="" displayed_units="" dim="14">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </LineWidthUnits>
+        <LineWidths units="" displayed_units="" dim="14">
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1</value>
+          <value>1</value>
+        </LineWidths>
+        <LabelFonts dim="14">
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+        </LabelFonts>
+        <MouseInteractionEnabled>true</MouseInteractionEnabled>
+        <metadata dim="0" />
+      </ViewWindow>
+    </Object>
+    <Object>
+      <PlotWindow name="PlotWindow1" isConstant="false" isGlobal="false">
+        <Name>PlotWindow1</Name>
+        <WindowTitle></WindowTitle>
+        <PlotType>XYPlot</PlotType>
+        <ConfigureFonts>true</ConfigureFonts>
+        <UseMonitorMode>false</UseMonitorMode>
+        <MaxPoints units="" displayed_units="">2000</MaxPoints>
+        <PointsToUpdate units="" displayed_units="">25</PointsToUpdate>
+        <Items>
+          <XYPlot>
+            <XAxisItem>
+              <EventCall name="PlotWindow1_:XAxisItem" isConstant="false" isGlobal="false">
+                <Name>PlotWindow1_:XAxisItem</Name>
+                <BaseObject>Rocinante</BaseObject>
+                <EventName>ElapsedTime</EventName>
+                <Parameters dim="0" />
+                <metadata dim="0" />
+              </EventCall>
+            </XAxisItem>
+            <YAxisItems dim="1">
+              <value>
+                <ObjectParameter name="PlotWindow1_:YAxisItems1" isConstant="false" isGlobal="false">
+                  <Name>PlotWindow1_:YAxisItems1</Name>
+                  <BaseObject>Rocinante</BaseObject>
+                  <Parameter>A</Parameter>
+                  <IndexType>NoIndices</IndexType>
+                  <IndexOptions>
+                    <NoIndices />
+                  </IndexOptions>
+                  <metadata dim="0" />
+                </ObjectParameter>
+              </value>
+            </YAxisItems>
+          </XYPlot>
+        </Items>
+        <BackgroundColor>16777215</BackgroundColor>
+        <HighQualityRendering>false</HighQualityRendering>
+        <InterlacedColor>15128749</InterlacedColor>
+        <InterlacedDirection>0</InterlacedDirection>
+        <Legend>
+          <PlotLegend name="PlotWindow1_|PlotLegend|" isConstant="false" isGlobal="false">
+            <Name>PlotWindow1_|PlotLegend|</Name>
+            <BorderVisible>false</BorderVisible>
+            <Font>
+              <PlotFont name="PlotWindow1_|PlotLegend|_|PlotFont|" isConstant="false" isGlobal="false">
+                <Name>PlotWindow1_|PlotLegend|_|PlotFont|</Name>
+                <Bold>false</Bold>
+                <BoldDefault>false</BoldDefault>
+                <Italic>false</Italic>
+                <Size units="points" displayed_units="points">9</Size>
+                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                <Strikeout>false</Strikeout>
+                <Typeface>Verdana</Typeface>
+                <TypefaceDefault>Verdana</TypefaceDefault>
+                <Underline>false</Underline>
+                <metadata dim="0" />
+              </PlotFont>
+            </Font>
+            <Location>3</Location>
+            <TextColor>0</TextColor>
+            <BackgroundColor>16777215</BackgroundColor>
+            <BorderColor>16777215</BorderColor>
+            <Title>
+              <PlotTitle name="PlotWindow1_|PlotLegend|_|PlotTitle|" isConstant="false" isGlobal="false">
+                <Name>PlotWindow1_|PlotLegend|_|PlotTitle|</Name>
+                <Color>0</Color>
+                <Font>
+                  <PlotFont name="PlotWindow1_|PlotLegend|_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
+                    <Name>PlotWindow1_|PlotLegend|_|PlotTitle|_|PlotFont|</Name>
+                    <Bold>false</Bold>
+                    <BoldDefault>false</BoldDefault>
+                    <Italic>false</Italic>
+                    <Size units="points" displayed_units="points">9</Size>
+                    <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                    <Strikeout>false</Strikeout>
+                    <Typeface>Verdana</Typeface>
+                    <TypefaceDefault>Verdana</TypefaceDefault>
+                    <Underline>false</Underline>
+                    <metadata dim="0" />
+                  </PlotFont>
+                </Font>
+                <Text></Text>
+                <TextDefault></TextDefault>
+                <Visible>true</Visible>
+                <metadata dim="0" />
+              </PlotTitle>
+            </Title>
+            <Visible>true</Visible>
+            <metadata dim="0" />
+          </PlotLegend>
+        </Legend>
+        <PlotAreaColor>16777215</PlotAreaColor>
+        <PlotSubTitle>
+          <PlotTitle name="PlotWindow1_|PlotSubTitle|" isConstant="false" isGlobal="false">
+            <Name>PlotWindow1_|PlotSubTitle|</Name>
+            <Color>0</Color>
+            <Font>
+              <PlotFont name="PlotWindow1_|PlotSubTitle|_|PlotFont|" isConstant="false" isGlobal="false">
+                <Name>PlotWindow1_|PlotSubTitle|_|PlotFont|</Name>
+                <Bold>false</Bold>
+                <BoldDefault>false</BoldDefault>
+                <Italic>false</Italic>
+                <Size units="points" displayed_units="points">9</Size>
+                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                <Strikeout>false</Strikeout>
+                <Typeface>Verdana</Typeface>
+                <TypefaceDefault>Verdana</TypefaceDefault>
+                <Underline>false</Underline>
+                <metadata dim="0" />
+              </PlotFont>
+            </Font>
+            <Text></Text>
+            <TextDefault></TextDefault>
+            <Visible>true</Visible>
+            <metadata dim="0" />
+          </PlotTitle>
+        </PlotSubTitle>
+        <PlotTitle>
+          <PlotTitle name="PlotWindow1_|PlotTitle|" isConstant="false" isGlobal="false">
+            <Name>PlotWindow1_|PlotTitle|</Name>
+            <Color>0</Color>
+            <Font>
+              <PlotFont name="PlotWindow1_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
+                <Name>PlotWindow1_|PlotTitle|_|PlotFont|</Name>
+                <Bold>false</Bold>
+                <BoldDefault>false</BoldDefault>
+                <Italic>false</Italic>
+                <Size units="points" displayed_units="points">9</Size>
+                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                <Strikeout>false</Strikeout>
+                <Typeface>Verdana</Typeface>
+                <TypefaceDefault>Verdana</TypefaceDefault>
+                <Underline>false</Underline>
+                <metadata dim="0" />
+              </PlotFont>
+            </Font>
+            <Text></Text>
+            <TextDefault></TextDefault>
+            <Visible>true</Visible>
+            <metadata dim="0" />
+          </PlotTitle>
+        </PlotTitle>
+        <RAxis>
+          <PlotAxis name="PlotWindow1_|RAxis|" isConstant="false" isGlobal="false">
+            <Name>PlotWindow1_|RAxis|</Name>
+            <Direction>0</Direction>
+            <GridColor>13420739</GridColor>
+            <GridLineStyle>2</GridLineStyle>
+            <GridLineStyleDefault>2</GridLineStyleDefault>
+            <GridLineWidth units="" displayed_units="">1</GridLineWidth>
+            <GridVisible>true</GridVisible>
+            <LabelsArrangement>0</LabelsArrangement>
+            <LabelsColor>0</LabelsColor>
+            <LabelsFont>
+              <PlotFont name="PlotWindow1_|RAxis|_|PlotFont|" isConstant="false" isGlobal="false">
+                <Name>PlotWindow1_|RAxis|_|PlotFont|</Name>
+                <Bold>false</Bold>
+                <BoldDefault>false</BoldDefault>
+                <Italic>false</Italic>
+                <Size units="points" displayed_units="points">9</Size>
+                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                <Strikeout>false</Strikeout>
+                <Typeface>Verdana</Typeface>
+                <TypefaceDefault>Verdana</TypefaceDefault>
+                <Underline>false</Underline>
+                <metadata dim="0" />
+              </PlotFont>
+            </LabelsFont>
+            <LabelsFormat>0.000</LabelsFormat>
+            <LabelsSpacing units="" displayed_units="">0</LabelsSpacing>
+            <Location>0</Location>
+            <MaximumValue units="" displayed_units="">0</MaximumValue>
+            <MinimumValue units="" displayed_units="">0</MinimumValue>
+            <Scaling>0</Scaling>
+            <Title>
+              <PlotTitle name="PlotWindow1_|RAxis|_|PlotTitle|" isConstant="false" isGlobal="false">
+                <Name>PlotWindow1_|RAxis|_|PlotTitle|</Name>
+                <Color>0</Color>
+                <Font>
+                  <PlotFont name="PlotWindow1_|RAxis|_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
+                    <Name>PlotWindow1_|RAxis|_|PlotTitle|_|PlotFont|</Name>
+                    <Bold>false</Bold>
+                    <BoldDefault>false</BoldDefault>
+                    <Italic>false</Italic>
+                    <Size units="points" displayed_units="points">9</Size>
+                    <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                    <Strikeout>false</Strikeout>
+                    <Typeface>Verdana</Typeface>
+                    <TypefaceDefault>Verdana</TypefaceDefault>
+                    <Underline>false</Underline>
+                    <metadata dim="0" />
+                  </PlotFont>
+                </Font>
+                <Text></Text>
+                <TextDefault></TextDefault>
+                <Visible>true</Visible>
+                <metadata dim="0" />
+              </PlotTitle>
+            </Title>
+            <UseAutoMaximum>true</UseAutoMaximum>
+            <UseAutoMinimum>true</UseAutoMinimum>
+            <UseDateTimeFormatting>false</UseDateTimeFormatting>
+            <UseDateTimeFormattingDefault>false</UseDateTimeFormattingDefault>
+            <metadata dim="0" />
+          </PlotAxis>
+        </RAxis>
+        <OwnedSeries dim="0" />
+        <ThetaAxis>
+          <PlotAxis name="PlotWindow1_|ThetaAxis|" isConstant="false" isGlobal="false">
+            <Name>PlotWindow1_|ThetaAxis|</Name>
+            <Direction>0</Direction>
+            <GridColor>13420739</GridColor>
+            <GridLineStyle>2</GridLineStyle>
+            <GridLineStyleDefault>2</GridLineStyleDefault>
+            <GridLineWidth units="" displayed_units="">1</GridLineWidth>
+            <GridVisible>true</GridVisible>
+            <LabelsArrangement>0</LabelsArrangement>
+            <LabelsColor>0</LabelsColor>
+            <LabelsFont>
+              <PlotFont name="PlotWindow1_|ThetaAxis|_|PlotFont|" isConstant="false" isGlobal="false">
+                <Name>PlotWindow1_|ThetaAxis|_|PlotFont|</Name>
+                <Bold>false</Bold>
+                <BoldDefault>false</BoldDefault>
+                <Italic>false</Italic>
+                <Size units="points" displayed_units="points">9</Size>
+                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                <Strikeout>false</Strikeout>
+                <Typeface>Verdana</Typeface>
+                <TypefaceDefault>Verdana</TypefaceDefault>
+                <Underline>false</Underline>
+                <metadata dim="0" />
+              </PlotFont>
+            </LabelsFont>
+            <LabelsFormat>0.000</LabelsFormat>
+            <LabelsSpacing units="" displayed_units="">0</LabelsSpacing>
+            <Location>0</Location>
+            <MaximumValue units="" displayed_units="">0</MaximumValue>
+            <MinimumValue units="" displayed_units="">0</MinimumValue>
+            <Scaling>0</Scaling>
+            <Title>
+              <PlotTitle name="PlotWindow1_|ThetaAxis|_|PlotTitle|" isConstant="false" isGlobal="false">
+                <Name>PlotWindow1_|ThetaAxis|_|PlotTitle|</Name>
+                <Color>0</Color>
+                <Font>
+                  <PlotFont name="PlotWindow1_|ThetaAxis|_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
+                    <Name>PlotWindow1_|ThetaAxis|_|PlotTitle|_|PlotFont|</Name>
+                    <Bold>false</Bold>
+                    <BoldDefault>false</BoldDefault>
+                    <Italic>false</Italic>
+                    <Size units="points" displayed_units="points">9</Size>
+                    <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                    <Strikeout>false</Strikeout>
+                    <Typeface>Verdana</Typeface>
+                    <TypefaceDefault>Verdana</TypefaceDefault>
+                    <Underline>false</Underline>
+                    <metadata dim="0" />
+                  </PlotFont>
+                </Font>
+                <Text></Text>
+                <TextDefault></TextDefault>
+                <Visible>true</Visible>
+                <metadata dim="0" />
+              </PlotTitle>
+            </Title>
+            <UseAutoMaximum>true</UseAutoMaximum>
+            <UseAutoMinimum>true</UseAutoMinimum>
+            <UseDateTimeFormatting>false</UseDateTimeFormatting>
+            <UseDateTimeFormattingDefault>false</UseDateTimeFormattingDefault>
+            <metadata dim="0" />
+          </PlotAxis>
+        </ThetaAxis>
+        <XAxis>
+          <PlotAxis name="PlotWindow1_|XAxis|" isConstant="false" isGlobal="false">
+            <Name>PlotWindow1_|XAxis|</Name>
+            <Direction>0</Direction>
+            <GridColor>13420739</GridColor>
+            <GridLineStyle>2</GridLineStyle>
+            <GridLineStyleDefault>2</GridLineStyleDefault>
+            <GridLineWidth units="" displayed_units="">1</GridLineWidth>
+            <GridVisible>true</GridVisible>
+            <LabelsArrangement>0</LabelsArrangement>
+            <LabelsColor>0</LabelsColor>
+            <LabelsFont>
+              <PlotFont name="PlotWindow1_|XAxis|_|PlotFont|" isConstant="false" isGlobal="false">
+                <Name>PlotWindow1_|XAxis|_|PlotFont|</Name>
+                <Bold>false</Bold>
+                <BoldDefault>false</BoldDefault>
+                <Italic>false</Italic>
+                <Size units="points" displayed_units="points">9</Size>
+                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                <Strikeout>false</Strikeout>
+                <Typeface>Verdana</Typeface>
+                <TypefaceDefault>Verdana</TypefaceDefault>
+                <Underline>false</Underline>
+                <metadata dim="0" />
+              </PlotFont>
+            </LabelsFont>
+            <LabelsFormat>0.000</LabelsFormat>
+            <LabelsSpacing units="" displayed_units="">0</LabelsSpacing>
+            <Location>0</Location>
+            <MaximumValue units="" displayed_units="">0</MaximumValue>
+            <MinimumValue units="" displayed_units="">0</MinimumValue>
+            <Scaling>0</Scaling>
+            <Title>
+              <PlotTitle name="PlotWindow1_|XAxis|_|PlotTitle|" isConstant="false" isGlobal="false">
+                <Name>PlotWindow1_|XAxis|_|PlotTitle|</Name>
+                <Color>0</Color>
+                <Font>
+                  <PlotFont name="PlotWindow1_|XAxis|_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
+                    <Name>PlotWindow1_|XAxis|_|PlotTitle|_|PlotFont|</Name>
+                    <Bold>false</Bold>
+                    <BoldDefault>false</BoldDefault>
+                    <Italic>false</Italic>
+                    <Size units="points" displayed_units="points">9</Size>
+                    <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                    <Strikeout>false</Strikeout>
+                    <Typeface>Verdana</Typeface>
+                    <TypefaceDefault>Verdana</TypefaceDefault>
+                    <Underline>false</Underline>
+                    <metadata dim="0" />
+                  </PlotFont>
+                </Font>
+                <Text></Text>
+                <TextDefault></TextDefault>
+                <Visible>true</Visible>
+                <metadata dim="0" />
+              </PlotTitle>
+            </Title>
+            <UseAutoMaximum>true</UseAutoMaximum>
+            <UseAutoMinimum>true</UseAutoMinimum>
+            <UseDateTimeFormatting>false</UseDateTimeFormatting>
+            <UseDateTimeFormattingDefault>false</UseDateTimeFormattingDefault>
+            <metadata dim="0" />
+          </PlotAxis>
+        </XAxis>
+        <YAxis>
+          <PlotAxis name="PlotWindow1_|YAxis|" isConstant="false" isGlobal="false">
+            <Name>PlotWindow1_|YAxis|</Name>
+            <Direction>0</Direction>
+            <GridColor>13420739</GridColor>
+            <GridLineStyle>2</GridLineStyle>
+            <GridLineStyleDefault>2</GridLineStyleDefault>
+            <GridLineWidth units="" displayed_units="">1</GridLineWidth>
+            <GridVisible>true</GridVisible>
+            <LabelsArrangement>0</LabelsArrangement>
+            <LabelsColor>0</LabelsColor>
+            <LabelsFont>
+              <PlotFont name="PlotWindow1_|YAxis|_|PlotFont|" isConstant="false" isGlobal="false">
+                <Name>PlotWindow1_|YAxis|_|PlotFont|</Name>
+                <Bold>false</Bold>
+                <BoldDefault>false</BoldDefault>
+                <Italic>false</Italic>
+                <Size units="points" displayed_units="points">9</Size>
+                <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                <Strikeout>false</Strikeout>
+                <Typeface>Verdana</Typeface>
+                <TypefaceDefault>Verdana</TypefaceDefault>
+                <Underline>false</Underline>
+                <metadata dim="0" />
+              </PlotFont>
+            </LabelsFont>
+            <LabelsFormat>0.000</LabelsFormat>
+            <LabelsSpacing units="" displayed_units="">0</LabelsSpacing>
+            <Location>0</Location>
+            <MaximumValue units="" displayed_units="">0</MaximumValue>
+            <MinimumValue units="" displayed_units="">0</MinimumValue>
+            <Scaling>0</Scaling>
+            <Title>
+              <PlotTitle name="PlotWindow1_|YAxis|_|PlotTitle|" isConstant="false" isGlobal="false">
+                <Name>PlotWindow1_|YAxis|_|PlotTitle|</Name>
+                <Color>0</Color>
+                <Font>
+                  <PlotFont name="PlotWindow1_|YAxis|_|PlotTitle|_|PlotFont|" isConstant="false" isGlobal="false">
+                    <Name>PlotWindow1_|YAxis|_|PlotTitle|_|PlotFont|</Name>
+                    <Bold>false</Bold>
+                    <BoldDefault>false</BoldDefault>
+                    <Italic>false</Italic>
+                    <Size units="points" displayed_units="points">9</Size>
+                    <SizeDefault units="points" displayed_units="points">9</SizeDefault>
+                    <Strikeout>false</Strikeout>
+                    <Typeface>Verdana</Typeface>
+                    <TypefaceDefault>Verdana</TypefaceDefault>
+                    <Underline>false</Underline>
+                    <metadata dim="0" />
+                  </PlotFont>
+                </Font>
+                <Text></Text>
+                <TextDefault></TextDefault>
+                <Visible>true</Visible>
+                <metadata dim="0" />
+              </PlotTitle>
+            </Title>
+            <UseAutoMaximum>true</UseAutoMaximum>
+            <UseAutoMinimum>true</UseAutoMinimum>
+            <UseDateTimeFormatting>false</UseDateTimeFormatting>
+            <UseDateTimeFormattingDefault>false</UseDateTimeFormattingDefault>
+            <metadata dim="0" />
+          </PlotAxis>
+        </YAxis>
+        <metadata dim="0" />
+      </PlotWindow>
+    </Object>
+  </ProjectObjects>
+  <ProjectMissionSequence>
+    <ProjectExternals />
+    <ProjectCommands>
+      <FreeForm enabled="false">
+        <Label>FreeForm</Label>
+        <Bookmarks />
+        <Breakpoints />
+        <FreeFormScript><![CDATA[GraphicsOverlay antennaModelGo;
+
+RFLink1.Receiver.BuildAntennaGainGraphicsOverlay(antennaModelGo, 1, 1 /* 0 = Uniform Scaling or 1 = Non-Uniform Scaling */);]]></FreeFormScript>
+      </FreeForm>
+      <WhileCommand enabled="true" collapsed="false">
+        <While name="Command2" isConstant="false" isGlobal="false">
+          <Name>Command2</Name>
+          <Condition>
+            <LogicalExpression name="Command2_:Condition" isConstant="false" isGlobal="false">
+              <Name>Command2_:Condition</Name>
+              <LHS xsi:nil="true" />
+              <RHS>
+                <LogicalCondition name="Command2_:Condition_:RHS" isConstant="false" isGlobal="false">
+                  <Name>Command2_:Condition_:RHS</Name>
+                  <ConditionType>RelExprDbl</ConditionType>
+                  <Condition>
+                    <RelationalExprReal name="Command2_:Condition_:RHS_:Condition" isConstant="false" isGlobal="false">
+                      <Name>Command2_:Condition_:RHS_:Condition</Name>
+                      <LHS>
+                        <EventCall name="Command2_:Condition_:RHS_:Condition_:LHS" isConstant="false" isGlobal="false">
+                          <Name>Command2_:Condition_:RHS_:Condition_:LHS</Name>
+                          <BaseObject>Rocinante</BaseObject>
+                          <EventName>ElapsedTime</EventName>
+                          <Parameters dim="0" />
+                          <metadata dim="0" />
+                        </EventCall>
+                      </LHS>
+                      <RHS>
+                        <TimeSpanConstant name="Command2_:Condition_:RHS_:Condition_:RHS" isConstant="false" isGlobal="false">
+                          <Name>Command2_:Condition_:RHS_:Condition_:RHS</Name>
+                          <value>1</value>
+                          <Units>days</Units>
+                          <metadata dim="0" />
+                        </TimeSpanConstant>
+                      </RHS>
+                      <Operator>&lt;</Operator>
+                      <metadata dim="0" />
+                    </RelationalExprReal>
+                  </Condition>
+                  <metadata dim="0" />
+                </LogicalCondition>
+              </RHS>
+              <Operator>and</Operator>
+              <metadata dim="0" />
+            </LogicalExpression>
+          </Condition>
+          <metadata dim="0" />
+        </While>
+        <FreeForm enabled="true">
+          <Label>FreeForm</Label>
+          <Bookmarks />
+          <Breakpoints />
+          <FreeFormScript><![CDATA[Step Rocinante;
+Update ViewWindow1;
+
+// Calculating gain
+Report RFLink1.GetEffectiveReceiverGain(Rocinante.Epoch);
+
+
+// Plots
+Plot Rocinante.Epoch,RFLink1.ComputeReceivedPower(Rocinante.Epoch), RFLink1.ComputeTransmitterPower(Rocinante.Epoch);]]></FreeFormScript>
+        </FreeForm>
+        <ReportCommand enabled="false">
+          <Report name="Command4" isConstant="false" isGlobal="false">
+            <Name>Command4</Name>
+            <OutputType>Screen</OutputType>
+            <OutputTypes>
+              <Screen />
+            </OutputTypes>
+            <Items dim="8">
+              <value>
+                <EventWithFormat name="Command4_:Items1" isConstant="false" isGlobal="false">
+                  <Name>Command4_:Items1</Name>
+                  <BaseObject>
+                    <EventCall name="Command4_:Items1_:BaseObject" isConstant="false" isGlobal="false">
+                      <Name>Command4_:Items1_:BaseObject</Name>
+                      <BaseObject>RFLink1</BaseObject>
+                      <EventName>GetEffectiveTransmitterGain</EventName>
+                      <Parameters dim="1">
+                        <value>
+                          <TimeSpanConstant name="Command4_:Items1_:BaseObject_:Parameters1" isConstant="false" isGlobal="false">
+                            <Name>Command4_:Items1_:BaseObject_:Parameters1</Name>
+                            <value>0</value>
+                            <Units>days</Units>
+                            <metadata dim="0" />
+                          </TimeSpanConstant>
+                        </value>
+                      </Parameters>
+                      <metadata dim="0" />
+                    </EventCall>
+                  </BaseObject>
+                  <Width units="" displayed_units="">14</Width>
+                  <Precision units="" displayed_units="">7</Precision>
+                  <metadata dim="0" />
+                </EventWithFormat>
+              </value>
+              <value>
+                <EventWithFormat name="Command4_:Items2" isConstant="false" isGlobal="false">
+                  <Name>Command4_:Items2</Name>
+                  <BaseObject>
+                    <EventCall name="Command4_:Items2_:BaseObject" isConstant="false" isGlobal="false">
+                      <Name>Command4_:Items2_:BaseObject</Name>
+                      <BaseObject>RFLink1</BaseObject>
+                      <EventName>GetEffectiveReceiverGain</EventName>
+                      <Parameters dim="1">
+                        <value>
+                          <TimeSpanConstant name="Command4_:Items2_:BaseObject_:Parameters1" isConstant="false" isGlobal="false">
+                            <Name>Command4_:Items2_:BaseObject_:Parameters1</Name>
+                            <value>0</value>
+                            <Units>days</Units>
+                            <metadata dim="0" />
+                          </TimeSpanConstant>
+                        </value>
+                      </Parameters>
+                      <metadata dim="0" />
+                    </EventCall>
+                  </BaseObject>
+                  <Width units="" displayed_units="">14</Width>
+                  <Precision units="" displayed_units="">7</Precision>
+                  <metadata dim="0" />
+                </EventWithFormat>
+              </value>
+              <value>
+                <EventWithFormat name="Command4_:Items3" isConstant="false" isGlobal="false">
+                  <Name>Command4_:Items3</Name>
+                  <BaseObject>
+                    <EventCall name="Command4_:Items3_:BaseObject" isConstant="false" isGlobal="false">
+                      <Name>Command4_:Items3_:BaseObject</Name>
+                      <BaseObject>RFLink1</BaseObject>
+                      <EventName>GetReceiverNoise</EventName>
+                      <Parameters dim="0" />
+                      <metadata dim="0" />
+                    </EventCall>
+                  </BaseObject>
+                  <Width units="" displayed_units="">14</Width>
+                  <Precision units="" displayed_units="">7</Precision>
+                  <metadata dim="0" />
+                </EventWithFormat>
+              </value>
+              <value>
+                <EventWithFormat name="Command4_:Items4" isConstant="false" isGlobal="false">
+                  <Name>Command4_:Items4</Name>
+                  <BaseObject>
+                    <EventCall name="Command4_:Items4_:BaseObject" isConstant="false" isGlobal="false">
+                      <Name>Command4_:Items4_:BaseObject</Name>
+                      <BaseObject>RFLink1</BaseObject>
+                      <EventName>GetTransmitterNoise</EventName>
+                      <Parameters dim="0" />
+                      <metadata dim="0" />
+                    </EventCall>
+                  </BaseObject>
+                  <Width units="" displayed_units="">14</Width>
+                  <Precision units="" displayed_units="">7</Precision>
+                  <metadata dim="0" />
+                </EventWithFormat>
+              </value>
+              <value>
+                <EventWithFormat name="Command4_:Items5" isConstant="false" isGlobal="false">
+                  <Name>Command4_:Items5</Name>
+                  <BaseObject>
+                    <EventCall name="Command4_:Items5_:BaseObject" isConstant="false" isGlobal="false">
+                      <Name>Command4_:Items5_:BaseObject</Name>
+                      <BaseObject>RFLink1</BaseObject>
+                      <EventName>GetEIRP</EventName>
+                      <Parameters dim="1">
+                        <value>
+                          <TimeSpanConstant name="Command4_:Items5_:BaseObject_:Parameters1" isConstant="false" isGlobal="false">
+                            <Name>Command4_:Items5_:BaseObject_:Parameters1</Name>
+                            <value>0</value>
+                            <Units>days</Units>
+                            <metadata dim="0" />
+                          </TimeSpanConstant>
+                        </value>
+                      </Parameters>
+                      <metadata dim="0" />
+                    </EventCall>
+                  </BaseObject>
+                  <Width units="" displayed_units="">14</Width>
+                  <Precision units="" displayed_units="">7</Precision>
+                  <metadata dim="0" />
+                </EventWithFormat>
+              </value>
+              <value>
+                <EventWithFormat name="Command4_:Items6" isConstant="false" isGlobal="false">
+                  <Name>Command4_:Items6</Name>
+                  <BaseObject>
+                    <EventCall name="Command4_:Items6_:BaseObject" isConstant="false" isGlobal="false">
+                      <Name>Command4_:Items6_:BaseObject</Name>
+                      <BaseObject>RFLink1</BaseObject>
+                      <EventName>GetFreeSpaceLoss</EventName>
+                      <Parameters dim="1">
+                        <value>
+                          <TimeSpanConstant name="Command4_:Items6_:BaseObject_:Parameters1" isConstant="false" isGlobal="false">
+                            <Name>Command4_:Items6_:BaseObject_:Parameters1</Name>
+                            <value>0</value>
+                            <Units>days</Units>
+                            <metadata dim="0" />
+                          </TimeSpanConstant>
+                        </value>
+                      </Parameters>
+                      <metadata dim="0" />
+                    </EventCall>
+                  </BaseObject>
+                  <Width units="" displayed_units="">14</Width>
+                  <Precision units="" displayed_units="">7</Precision>
+                  <metadata dim="0" />
+                </EventWithFormat>
+              </value>
+              <value>
+                <EventWithFormat name="Command4_:Items7" isConstant="false" isGlobal="false">
+                  <Name>Command4_:Items7</Name>
+                  <BaseObject>
+                    <EventCall name="Command4_:Items7_:BaseObject" isConstant="false" isGlobal="false">
+                      <Name>Command4_:Items7_:BaseObject</Name>
+                      <BaseObject>RFLink1</BaseObject>
+                      <EventName>ComputeReceivedPower</EventName>
+                      <Parameters dim="1">
+                        <value>
+                          <TimeSpanConstant name="Command4_:Items7_:BaseObject_:Parameters1" isConstant="false" isGlobal="false">
+                            <Name>Command4_:Items7_:BaseObject_:Parameters1</Name>
+                            <value>0</value>
+                            <Units>days</Units>
+                            <metadata dim="0" />
+                          </TimeSpanConstant>
+                        </value>
+                      </Parameters>
+                      <metadata dim="0" />
+                    </EventCall>
+                  </BaseObject>
+                  <Width units="" displayed_units="">14</Width>
+                  <Precision units="" displayed_units="">7</Precision>
+                  <metadata dim="0" />
+                </EventWithFormat>
+              </value>
+              <value>
+                <EventWithFormat name="Command4_:Items8" isConstant="false" isGlobal="false">
+                  <Name>Command4_:Items8</Name>
+                  <BaseObject>
+                    <EventCall name="Command4_:Items8_:BaseObject" isConstant="false" isGlobal="false">
+                      <Name>Command4_:Items8_:BaseObject</Name>
+                      <BaseObject>RFLink1</BaseObject>
+                      <EventName>ComputeTransmitterPower</EventName>
+                      <Parameters dim="1">
+                        <value>
+                          <TimeSpanConstant name="Command4_:Items8_:BaseObject_:Parameters1" isConstant="false" isGlobal="false">
+                            <Name>Command4_:Items8_:BaseObject_:Parameters1</Name>
+                            <value>0</value>
+                            <Units>days</Units>
+                            <metadata dim="0" />
+                          </TimeSpanConstant>
+                        </value>
+                      </Parameters>
+                      <metadata dim="0" />
+                    </EventCall>
+                  </BaseObject>
+                  <Width units="" displayed_units="">14</Width>
+                  <Precision units="" displayed_units="">7</Precision>
+                  <metadata dim="0" />
+                </EventWithFormat>
+              </value>
+            </Items>
+            <WithoutHeaders>false</WithoutHeaders>
+            <WithoutLinefeed>false</WithoutLinefeed>
+            <WithoutPad>false</WithoutPad>
+            <metadata dim="0" />
+          </Report>
+        </ReportCommand>
+        <PlotCommand enabled="false">
+          <Plot name="Command5" isConstant="false" isGlobal="false">
+            <Name>Command5</Name>
+            <PlotType>XYPlot</PlotType>
+            <ScrollPlot>0</ScrollPlot>
+            <Items>
+              <XYPlot>
+                <XAxisItem>
+                  <EventCall name="Command5_:XAxisItem" isConstant="false" isGlobal="false">
+                    <Name>Command5_:XAxisItem</Name>
+                    <BaseObject>Rocinante</BaseObject>
+                    <EventName>ElapsedTime</EventName>
+                    <Parameters dim="0" />
+                    <metadata dim="0" />
+                  </EventCall>
+                </XAxisItem>
+                <YAxisItems dim="2">
+                  <value>
+                    <EventCall name="Command5_:YAxisItems1" isConstant="false" isGlobal="false">
+                      <Name>Command5_:YAxisItems1</Name>
+                      <BaseObject>RFLink1</BaseObject>
+                      <EventName>GetSignalToNoiseRatio</EventName>
+                      <Parameters dim="2">
+                        <value>
+                          <TimeSpanConstant name="Command5_:YAxisItems1_:Parameters1" isConstant="false" isGlobal="false">
+                            <Name>Command5_:YAxisItems1_:Parameters1</Name>
+                            <value>0</value>
+                            <Units>days</Units>
+                            <metadata dim="0" />
+                          </TimeSpanConstant>
+                        </value>
+                        <value>
+                          <StringConstant name="Command5_:YAxisItems1_:Parameters2" isConstant="false" isGlobal="false">
+                            <Name>Command5_:YAxisItems1_:Parameters2</Name>
+                            <value>Calculated</value>
+                            <metadata dim="0" />
+                          </StringConstant>
+                        </value>
+                      </Parameters>
+                      <metadata dim="0" />
+                    </EventCall>
+                  </value>
+                  <value>
+                    <EventCall name="Command5_:YAxisItems2" isConstant="false" isGlobal="false">
+                      <Name>Command5_:YAxisItems2</Name>
+                      <BaseObject>RFLink1</BaseObject>
+                      <EventName>GetSignalToNoiseRatio</EventName>
+                      <Parameters dim="2">
+                        <value>
+                          <TimeSpanConstant name="Command5_:YAxisItems2_:Parameters1" isConstant="false" isGlobal="false">
+                            <Name>Command5_:YAxisItems2_:Parameters1</Name>
+                            <value>0</value>
+                            <Units>days</Units>
+                            <metadata dim="0" />
+                          </TimeSpanConstant>
+                        </value>
+                        <value>
+                          <DoubleConstant name="Command5_:YAxisItems2_:Parameters2" isConstant="false" isGlobal="false">
+                            <Name>Command5_:YAxisItems2_:Parameters2</Name>
+                            <value units="" displayed_units="">0</value>
+                            <metadata dim="0" />
+                          </DoubleConstant>
+                        </value>
+                      </Parameters>
+                      <metadata dim="0" />
+                    </EventCall>
+                  </value>
+                </YAxisItems>
+              </XYPlot>
+            </Items>
+            <metadata dim="0" />
+          </Plot>
+        </PlotCommand>
+        <PlotCommand enabled="false">
+          <Plot name="Command6" isConstant="false" isGlobal="false">
+            <Name>Command6</Name>
+            <PlotType>XYPlot</PlotType>
+            <ScrollPlot>false</ScrollPlot>
+            <Items>
+              <XYPlot>
+                <XAxisItem>
+                  <EventCall name="Command6_:XAxisItem" isConstant="false" isGlobal="false">
+                    <Name>Command6_:XAxisItem</Name>
+                    <BaseObject>Rocinante</BaseObject>
+                    <EventName>ElapsedTime</EventName>
+                    <Parameters dim="0" />
+                    <metadata dim="0" />
+                  </EventCall>
+                </XAxisItem>
+                <YAxisItems dim="1">
+                  <value>
+                    <ObjectParameter name="Command6_:YAxisItems1" isConstant="false" isGlobal="false">
+                      <Name>Command6_:YAxisItems1</Name>
+                      <BaseObject>Rocinante</BaseObject>
+                      <Parameter>A</Parameter>
+                      <IndexType>NoIndices</IndexType>
+                      <IndexOptions>
+                        <NoIndices />
+                      </IndexOptions>
+                      <metadata dim="0" />
+                    </ObjectParameter>
+                  </value>
+                </YAxisItems>
+              </XYPlot>
+            </Items>
+            <metadata dim="0" />
+          </Plot>
+        </PlotCommand>
+      </WhileCommand>
+    </ProjectCommands>
+  </ProjectMissionSequence>
+  <ProjectScript><![CDATA[// GraphicsOverlay antennaModelGo;
+// 
+// RFLink1.Receiver.BuildAntennaGainGraphicsOverlay(antennaModelGo, 1, 1 /* 0 = Uniform Scaling or 1 = Non-Uniform Scaling */);
+While (Rocinante.ElapsedTime < TIMESPAN(1 days));
+Step Rocinante;
+Update ViewWindow1;
+
+// Calculating gain
+Report RFLink1.GetEffectiveReceiverGain(Rocinante.Epoch);
+
+
+// Plots
+Plot Rocinante.Epoch,RFLink1.ComputeReceivedPower(Rocinante.Epoch), RFLink1.ComputeTransmitterPower(Rocinante.Epoch);
+// Report RFLink1.GetEffectiveTransmitterGain(TIMESPAN(0 days))<14,7>, RFLink1.GetEffectiveReceiverGain(TIMESPAN(0 days))<14,7>, RFLink1.GetReceiverNoise<14,7>, RFLink1.GetTransmitterNoise<14,7>, RFLink1.GetEIRP(TIMESPAN(0 days))<14,7>, RFLink1.GetFreeSpaceLoss(TIMESPAN(0 days))<14,7>, RFLink1.ComputeReceivedPower(TIMESPAN(0 days))<14,7>, RFLink1.ComputeTransmitterPower(TIMESPAN(0 days))<14,7>;
+// Plot Rocinante.ElapsedTime, RFLink1.GetSignalToNoiseRatio(TIMESPAN(0 days), "Calculated"), RFLink1.GetSignalToNoiseRatio(TIMESPAN(0 days), 0);
+// Plot Rocinante.ElapsedTime, Rocinante.A;
+End;]]></ProjectScript>
+  <ProjectNotes></ProjectNotes>
+</FreeFlyerProjectFile>
